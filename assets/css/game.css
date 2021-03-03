@@ -7,9 +7,49 @@ html{
     color: #ffffff;
 }
 
+.main-title {
+    font-size: 18px;
+}
+
 .choice-box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
+    min-width: 800px; 
     margin-bottom: 20px;
     background-color: rgb(107,142,35);
+    border-radius: 15px;
+    align-items: center;
+}
+
+.choice-box:hover {
+    box-shadow: 0 0 15px 0 rgb(0,0,0);
+    cursor: pointer;
+    transform: scale(1.009);
+}
+
+#letter-choice {
+    font-size: 30px;
+    padding: 20px;
+}
+
+#answer-choice {
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+#correct-ans {
+    background-color: rgb(50,205,50);
+}
+
+#incorrect-ans {
+    background-color: rgb(205,50,50);
+}
+
+@media screen and (max-width: 768px) {
+    .choice-box {
+        min-width: 400px;
+    }
+     
 }
