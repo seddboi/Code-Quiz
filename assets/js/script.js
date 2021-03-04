@@ -55,9 +55,13 @@ function applyToPage(questionNumber) {
         
     }
 }
+
+// -----------------------------------------------------------------------------
+// Testing section
 for (var i=0; i < questions.length; i++) {
     var visibleQuestion = questions[questionNumber].question;
     var possibleAnswers = questions[questionNumber].options;
     mainQuestion.textContent = visibleQuestion;
     questionNumber++;
 }
+// -----------------------------------------------------------------------------
