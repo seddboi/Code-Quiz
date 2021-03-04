@@ -36,11 +36,6 @@ var questionNumber = 0;
 var mainQuestion = document.getElementById('main-question');
 let choiceBoxes = document.getElementsByClassName('choice-box');
 
-// -----------------------------------------------------------------------------
-var visibleQuestion = questions[questionNumber].question;
-var options = questions[questionNumber].options;
-// -----------------------------------------------------------------------------
-
 // This function adheres the questions to the boxes in the main quiz page
 function applyToPage(questionNumber) {
     for (var i=0; i < questions.length; i++) {
