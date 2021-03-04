@@ -23,6 +23,7 @@ html{
 }
 
 .choice-box:hover {
+    background-color: rgb(60,179,113);
     box-shadow: 0 0 15px 0 rgb(0,0,0);
     cursor: pointer;
     transform: scale(1.009);
