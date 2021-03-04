@@ -20,5 +20,6 @@ In regards to Javascript, I was unsuccessful in my atttempts of creating a funct
 ## Sample Viewing of the Project
 (insert working project gif here)
 
-Github link: https://github.com/seddboi/Code-Quiz
-Live Website: (n/a)
+Github link: https://github.com/seddboi/Code-Quiz 
+
+Live Website: https://seddboi.github.io/Code-Quiz/
