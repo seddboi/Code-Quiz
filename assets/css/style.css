@@ -27,7 +27,7 @@ html{
     margin-top: 100px;
 }
 
-.start-button {
+#start-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,11 +41,11 @@ html{
     box-shadow: 6px 6px 15px rgb(105,105,105);
 }
 
-.start-button:hover {
+#start-button:hover {
     background-color: rgb(60,179,113);
 }
 
-.start-button:active {
+#start-button:active {
     background-color: rgb(60,179,113);
     box-shadow: 6px 6px 15px rgb(0,0,0);
     transform: translateY(4px);

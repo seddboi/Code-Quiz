@@ -7,8 +7,12 @@ html{
     color: #ffffff;
 }
 
-.main-title {
+.status-bar {
+    display:flex;
+    width: 100%;
+    flex-direction: row;
     font-size: 18px;
+    justify-content: space-between;
 }
 
 .choice-box {
@@ -50,7 +54,7 @@ html{
 
 @media screen and (max-width: 768px) {
     .choice-box {
-        min-width: 400px;
+        min-width: 355px;
     }
      
 }
