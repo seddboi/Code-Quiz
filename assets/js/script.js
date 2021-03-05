@@ -34,7 +34,8 @@ var score = 0;
 var questionNumber = 0;
 
 var mainQuestion = document.querySelector('#main-question');
-var choiceBoxes = document.getElementsByClassName('choice-box');
+var choiceBoxes = document.querySelectorAll('.choice-box');
+var answerText = document.querySelectorAll('.answer-choice')
 
 var timeRemain = document.querySelector('#time-remaining')
 var timerStart = document.querySelector('#start-button');
@@ -55,27 +56,15 @@ timerStart.addEventListener("click", function ()  {
     }
 });
 
-// // This function adheres the questions to the boxes in the main quiz page
-// function applyToPage(questionNumber) {
-//     for (var i=0; i < questions.length; i++) {
-//         var visibleQuestion = questions[questionNumber].question;
-//         var possibleAnswers = questions[questionNumber].options;
-//         mainQuestion.textContent = visibleQuestion;
-//         questionNumber++;
+// This function adheres the questions to the boxes in the main quiz page
+function applyToPage(questionNumber) {
+    mainQuestion.textContent = questions[questionNumber].question;
+    // this establishes a variable for the array that will be looped through for the answer choices
+    var userOptions = questions[questionNumber].options;    
+    userOptions.forEach(function(newAnswer) {
+        answerText.textContent = newAnswer;
+        // listItem.addEventListener("click", compare);
+    })
+}
 
-//         for (var x=0; options.length; x++) {
-//             choiceBoxes.textContent = possibleAnswers;
-//         }
-        
-//     }
-// }
-
-// // -----------------------------------------------------------------------------
-// // Testing section
-// for (var i=0; i < questions.length; i++) {
-//     var visibleQuestion = questions[questionNumber].question;
-//     var possibleAnswers = questions[questionNumber].options;
-//     mainQuestion.textContent = visibleQuestion;
-//     questionNumber++;
-// }
-// // -----------------------------------------------------------------------------
+applyToPage(questionNumber);
